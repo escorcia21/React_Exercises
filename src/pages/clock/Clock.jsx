@@ -11,15 +11,15 @@ const Clock = () => {
         
         const second = today.getSeconds();
         const secondDeg = ((second / 60) * 360) + 360; 
-        secondHand.style.transform = `rotate(${secondDeg}deg)`;
+        secondHand.style.transform = `rotate(${secondDeg}deg) translate(-50%, -100%)`;
         
         const minute = today.getMinutes();
         const minuteDeg = ((minute / 60) * 360); 
-        minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
+        minuteHand.style.transform = `rotate(${minuteDeg}deg) translate(-10%, -100%)`;
 
         const hour = today.getHours();
         const hourDeg = ((hour / 12 ) * 360 ); 
-        hourHand.style.transform = `rotate(${hourDeg}deg)`;
+        hourHand.style.transform = `rotate(${hourDeg}deg) translate(-10%, -90%)`;
 
         console.log(hour,minute,second);
     }
@@ -62,12 +62,13 @@ const Clock = () => {
                         <li><span>10</span></li>
                         <li><span>11</span></li>
                         <li><span>12</span></li>
+                        
+                        <div className="hands">
+                            <div className="hour-hand"/>
+                            <div className="minute-hand"/>
+                            <div className="second-hand"/>
+                        </div>
                     </ul>
-                    <div className="hands">
-                        <div className="hour-hand"/>
-                        <div className="minute-hand"/>
-                        <div className="second-hand"/>
-                    </div>
                 </div>
             </div>
         </div>
