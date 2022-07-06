@@ -1,0 +1,9 @@
+.containerTodo {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.todo {
+    display: flex;
+}

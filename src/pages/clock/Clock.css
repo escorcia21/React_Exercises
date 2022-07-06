@@ -53,11 +53,11 @@
     transform: translate(-50%,-50%);
     z-index: 99999;
 }
-ul {
+.numbers {
     height: 100%;
     width: 100%;
 }
-li {
+.numbers li {
     position: absolute;
     list-style: none;
     font-size: clamp(1rem, 10vw, 1.8rem); 
@@ -67,12 +67,12 @@ li {
     height: calc(50% + 30px);
     left: calc(50% - 20px);
 }
-li:nth-child(3n){
+.numbers li:nth-child(3n){
     font-size: clamp(1rem, 10vw, 2.5rem) !important; 
     font-weight: bold;
     color: #000;
 }
-li span {
+.numbers li span {
     position: inherit;
     text-align: center;
     width: 30px;

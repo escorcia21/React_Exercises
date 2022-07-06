@@ -49,7 +49,7 @@ const Clock = () => {
         <div className='container'>
             <div className="clock">
                 <div className="clock-face">
-                    <ul>
+                    <ul className='numbers'>
                         <li><span>1</span></li>
                         <li><span>2</span></li>
                         <li><span>3</span></li>
